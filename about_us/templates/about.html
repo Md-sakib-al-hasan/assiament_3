@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}about us{% endblock title %}
+{% block content %}
+<div class="container mt-4">
+    <div class="row align-item-center">
+      <div class="col-lg-6">
+        <h2 style="margin-top:15rem">About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus massa ut turpis euismod, eu interdum massa ultrices. Sed et lacinia metus. Nulla facilisi. Proin sodales urna id dui viverra, eu accumsan velit pharetra.</p>
+        <p>Integer fermentum elit in lacus malesuada feugiat. Vestibulum et tortor vel nunc sollicitudin feugiat. Aliquam erat volutpat. Sed quis purus sed nulla facilisis iaculis. Vestibulum non eros id urna hendrerit fermentum.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="{% static 'man.png' %}" alt="Company Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <h2>Our Team</h2>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="{% static 'download.jpg' %}" alt="Team Member" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">Co-Founder & CEO</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="{% static 'download (2).jpg' %}" alt="Team Member" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Jane Smith</h5>
+            <p class="card-text">Chief Technology Officer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img class="w-75" src="{% static 'download (1).jpg' %}" alt="Team Member" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Alex Johnson</h5>
+            <p class="card-text">Head of Marketing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
